@@ -7,7 +7,7 @@ import { usePathname } from 'next/navigation'
 import {
   LayoutDashboard, Brain, TreeDeciduous, Rocket, Calendar, FileText,
   Settings, LogOut, Sparkles, Moon, Sun, Menu, X, ChevronRight,
-  Zap, Target, MessageCircle, TrendingUp
+  Zap, Target, MessageCircle, TrendingUp, Users, Trophy
 } from 'lucide-react'
 import { useStore } from '@/store/store'
 import { cn } from '@/lib/utils'
@@ -16,8 +16,15 @@ const navItems = [
   { href: '/dashboard', label: 'Dashboard', icon: LayoutDashboard },
   { href: '/skills', label: 'Skill Tree', icon: TreeDeciduous },
   { href: '/mentor', label: 'AI Mentor', icon: MessageCircle },
+  { href: '/career-gps', label: 'Career GPS', icon: Target },
+  { href: '/placement', label: 'Placement Predictor', icon: TrendingUp },
   { href: '/roadmap', label: 'Roadmap', icon: Calendar },
-  { href: '/projects', label: 'Projects', icon: Rocket },
+  { href: '/mock-interview', label: 'Mock Interview', icon: Zap },
+  { href: '/project-generator', label: 'Project Generator', icon: Rocket },
+  { href: '/projects', label: 'My Projects', icon: FileText },
+  { href: '/career-twin', label: 'Career Twin', icon: Users },
+  { href: '/team-finder', label: 'Team Finder', icon: Users },
+  { href: '/competitions', label: 'Competitions', icon: Trophy },
   { href: '/settings', label: 'Settings', icon: Settings },
 ]
 
