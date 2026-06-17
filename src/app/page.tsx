@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowRight, Bot, Brain, LineChart, Rocket, Sparkles, Target, Zap } from 'lucide-react'
+import { ArrowRight, Bot, Brain, ChartLine as LineChart, Rocket, Sparkles, Target, Zap } from 'lucide-react'
 import Link from 'next/link'
 import { useState, useEffect } from 'react'
 

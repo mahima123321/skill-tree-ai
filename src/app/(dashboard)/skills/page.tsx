@@ -2,9 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import {
-  TreeDeciduous, Lock, CheckCircle, Clock, Zap, Star, ChevronRight, Filter, Search
-} from 'lucide-react'
+import { TreeDeciduous, Lock, CircleCheck as CheckCircle, Clock, Zap, Star, ChevronRight, ListFilter as Filter, Search } from 'lucide-react'
 import { Card } from '@/components/ui'
 import { useStore } from '@/store/store'
 import { supabase } from '@/lib/supabase'

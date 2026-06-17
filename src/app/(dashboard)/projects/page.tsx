@@ -2,9 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import {
-  Rocket, Plus, Lightbulb, Loader2, CheckCircle, Clock, Sparkles, X, ChevronRight
-} from 'lucide-react'
+import { Rocket, Plus, Lightbulb, Loader as Loader2, CircleCheck as CheckCircle, Clock, Sparkles, X, ChevronRight } from 'lucide-react'
 import { Card, Button } from '@/components/ui'
 import { useStore } from '@/store/store'
 import { supabase } from '@/lib/supabase'
