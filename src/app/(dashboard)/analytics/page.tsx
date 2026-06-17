@@ -2,10 +2,7 @@
 
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import {
-  BarChart3, Users, UserPlus, TrendingUp, AlertTriangle, MousePointer,
-  Loader2, Calendar, ArrowUp, ArrowDown
-} from 'lucide-react'
+import { ChartBar as BarChart3, Users, UserPlus, TrendingUp, TriangleAlert as AlertTriangle, MousePointer, Loader as Loader2, Calendar, ArrowUp, ArrowDown } from 'lucide-react'
 import { Card } from '@/components/ui'
 import { useStore } from '@/store/store'
 import { supabase } from '@/lib/supabase'

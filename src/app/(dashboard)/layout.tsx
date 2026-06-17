@@ -1,10 +1,11 @@
 'use client'
 
 import { useEffect } from 'react'
-import { useRouter } from 'next/navigation'
+import { useRouter, usePathname } from 'next/navigation'
 import { Sidebar } from '@/components/layout/Sidebar'
 import { useStore } from '@/store/store'
 import { motion } from 'framer-motion'
+import { initAnalytics, trackPageView } from '@/lib/analytics'
 
 export default function DashboardLayout({
   children,
@@ -13,6 +14,17 @@ export default function DashboardLayout({
 }) {
   const { user, isLoading } = useStore()
   const router = useRouter()
+  const pathname = usePathname()
+
+  useEffect(() => {
+    initAnalytics()
+  }, [])
+
+  useEffect(() => {
+    if (pathname) {
+      trackPageView(pathname)
+    }
+  }, [pathname])
 
   useEffect(() => {
     if (!isLoading && !user) {

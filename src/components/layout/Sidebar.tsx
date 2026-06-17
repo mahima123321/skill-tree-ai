@@ -4,11 +4,7 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import {
-  LayoutDashboard, Brain, TreeDeciduous, Rocket, Calendar, FileText,
-  Settings, LogOut, Sparkles, Moon, Sun, Menu, X, ChevronRight,
-  Zap, Target, MessageCircle, TrendingUp, Users, Trophy
-} from 'lucide-react'
+import { LayoutDashboard, Brain, TreeDeciduous, Rocket, Calendar, FileText, Settings, LogOut, Sparkles, Moon, Sun, Menu, X, ChevronRight, Zap, Target, MessageCircle, TrendingUp, Users, Trophy, ChartBar as BarChart3, MessageSquare } from 'lucide-react'
 import { useStore } from '@/store/store'
 import { cn } from '@/lib/utils'
 
@@ -25,6 +21,8 @@ const navItems = [
   { href: '/career-twin', label: 'Career Twin', icon: Users },
   { href: '/team-finder', label: 'Team Finder', icon: Users },
   { href: '/competitions', label: 'Competitions', icon: Trophy },
+  { href: '/analytics', label: 'Analytics', icon: BarChart3 },
+  { href: '/feedback', label: 'Feedback', icon: MessageSquare },
   { href: '/settings', label: 'Settings', icon: Settings },
 ]
 
